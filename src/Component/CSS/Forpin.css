@@ -1,0 +1,661 @@
+/* ==========================================================================
+   PICTOR TELEMATICS - FORPIN COMPONENT STYLES
+   ========================================================================== */
+
+.forpin-container {
+  width: 100%;
+  background-color: #070b14;
+  color: #dfe2f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  padding-top: 10px;
+}
+
+.forpin-wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.forpin-header-section {
+  padding: 40px 0 30px 0;
+  background: linear-gradient(180deg, #0b1324 0%, #070b14 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.forpin-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.forpin-breadcrumbs .sep {
+  opacity: 0.4;
+}
+
+.forpin-breadcrumbs .active-crumb {
+  color: #00f0ff;
+  font-weight: 700;
+}
+
+.forpin-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  line-height: 1.25;
+}
+
+.forpin-subtitle {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 840px;
+  margin: 0 0 20px 0;
+}
+
+.forpin-specs-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.spec-tag {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  color: #00f0ff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* Sub-Tabs */
+.forpin-tabs-bar {
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  background: rgba(9, 14, 26, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tabs-flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tab-btn-active {
+  background: rgba(0, 240, 255, 0.12) !important;
+  color: #00f0ff !important;
+  border: 1px solid rgba(0, 240, 255, 0.35) !important;
+}
+
+/* Content Body */
+.forpin-content-body {
+  padding: 35px 24px 80px 24px;
+}
+
+.pane-header {
+  margin-bottom: 26px;
+}
+
+.pane-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+.pane-header p {
+  font-size: 13.5px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Tab 1: Product Showcase with Image */
+.product-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.product-image-card {
+  background: linear-gradient(145deg, #0d1527 0%, #070c18 100%);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #050811;
+}
+
+.hardware-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hardware-img:hover {
+  transform: scale(1.04);
+}
+
+.image-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(4, 9, 20, 0.9);
+  color: #00f0ff;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.image-caption {
+  padding: 20px;
+}
+
+.image-caption strong {
+  display: block;
+  font-size: 15.5px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.image-caption span {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.hardware-specs-list {
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hardware-specs-list h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.anatomy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.anatomy-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0, 240, 255, 0.12);
+  color: #00f0ff;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.anatomy-info strong {
+  display: block;
+  font-size: 13.5px;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.anatomy-info p {
+  font-size: 12.5px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tab 2: Pinout Table */
+.pinout-card {
+  background: linear-gradient(145deg, #0c1426 0%, #070c18 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow-x: auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
+}
+
+.forpin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.forpin-table th {
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+}
+
+.forpin-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+}
+
+.pin-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #00f0ff;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.red-swatch { background: #ef4444; }
+.black-swatch { background: #475569; border: 1px solid #94a3b8; }
+.orange-swatch { background: #f97316; }
+.yellow-swatch { background: #eab308; }
+
+.callout-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.callout-box.warning {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #cbd5e1;
+}
+
+.callout-box.warning strong {
+  color: #f87171;
+}
+
+.callout-box.info {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: #cbd5e1;
+}
+
+.callout-box.info strong {
+  color: #00f0ff;
+}
+
+/* Tab 3: Relay Section */
+.relay-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.relay-diagram-card {
+  background: #09101f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.relay-box-visual {
+  width: 250px;
+  height: 250px;
+  border: 2px dashed rgba(52, 255, 141, 0.45);
+  border-radius: 16px;
+  position: relative;
+  background: rgba(14, 23, 42, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relay-nameplate {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #34ff8d;
+  text-align: center;
+}
+
+.terminal-node {
+  position: absolute;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-node span {
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.terminal-node small {
+  font-size: 8.5px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.node-85 { top: -16px; }
+.node-86 { bottom: -16px; border-color: #eab308; }
+.node-30 { left: -30px; }
+.node-87a { right: -30px; }
+
+.relay-instruction-card {
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.relay-instruction-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+}
+
+.relay-steps {
+  padding-left: 20px;
+  margin: 0 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.relay-steps li {
+  font-size: 13.5px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.relay-steps strong {
+  color: #ffffff;
+}
+
+/* Tab 4: LED Indicators */
+.led-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.led-diagnostic-card {
+  background: linear-gradient(145deg, #0d1527 0%, #070c18 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.led-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 12px;
+}
+
+.bulb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.red-bulb { background: #ef4444; box-shadow: 0 0 12px #ef4444; }
+.blue-bulb { background: #00f0ff; box-shadow: 0 0 12px #00f0ff; }
+.green-bulb { background: #34ff8d; box-shadow: 0 0 12px #34ff8d; }
+
+.led-card-header h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.led-state-item {
+  margin-bottom: 14px;
+}
+
+.state-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.08);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.led-state-item p {
+  font-size: 12.5px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tab 5: SMS Grid */
+.sms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.sms-card {
+  background: #090f1e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.sms-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sms-top h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.copy-chip {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #00f0ff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-chip:hover {
+  background: rgba(0, 240, 255, 0.15);
+}
+
+.code-display {
+  background: #04070f;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+.code-display code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #34ff8d;
+}
+
+.sms-details {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.sms-details code {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.purpose-text {
+  margin: 6px 0 0 0;
+  line-height: 1.45;
+}
+
+/* Tab 6: Troubleshooting Stack */
+.troubleshooting-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fault-card {
+  background: linear-gradient(145deg, #0c1426 0%, #070c18 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.fault-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.fault-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.red-text { color: #f87171; }
+.orange-text { color: #fb923c; }
+.cyan-text { color: #00f0ff; }
+
+.fault-header h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 4px 0 0 0;
+}
+
+.fault-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+}
+
+.fault-col strong {
+  display: block;
+  font-size: 13px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.fault-col ul, .fault-col ol {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.55;
+}
+
+.fault-col ol li {
+  margin-bottom: 6px;
+}
+
+.fault-col code {
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-showcase-grid { grid-template-columns: 1fr; }
+  .relay-grid { grid-template-columns: 1fr; }
+  .led-cards-row { grid-template-columns: 1fr; }
+  .sms-grid { grid-template-columns: 1fr; }
+  .fault-content { grid-template-columns: 1fr; }
+}

@@ -10,6 +10,8 @@ import Pro from './Component/Pages/product';
 import Home from './Component/Pages/Home';
 import About from './Component/Pages/About';
 import Footer from './Component/Pages/Footer'
+import Forpin from './Component/Pages/forpin';
+import L57 from './Component/Pages/L57';
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +30,8 @@ function App() {
         <Route path='/product' element={<Pro/>}/>
       
        <Route path='/about' element={<About/>}/>
+       <Route path="/wired-gps/4-pin" element={< Forpin />} />
+       <Route path="/wired-gps/6-pin" element={< L57 />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
