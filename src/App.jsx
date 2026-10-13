@@ -10,7 +10,7 @@ import Pro from './Component/Pages/product';
 import Home from './Component/Pages/Home';
 import About from './Component/Pages/About';
 import Footer from './Component/Pages/Footer'
-import Forpin from './Component/Pages/forpin';
+import Forpin from './Component/Pages/Forpin';
 // import L57 from './Component/Pages/L57';
 function App() {
   return (
